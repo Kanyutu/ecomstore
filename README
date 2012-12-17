@@ -1,4 +1,3 @@
-
 -------------------------------------------
 Make sure that the ecomstore directory where you put your project on your machine is on your system's PYTHONPATH. 
 
@@ -49,6 +48,6 @@ CACHE_BACKEND value in settings.py.
 
 Before using, be sure to generate a long random string of characters for the SECRET_KEY value in settings.py.
 
-For questions or comments about this project contact John at: dextrazdxt@gmail.com.
+For questions or comments about this project contact dextraz at: dextrazdxt@gmail.com.
 
 This file was modified by PyCharm 2.5 for binding GitHub repository
