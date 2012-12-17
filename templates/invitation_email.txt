@@ -1,0 +1,9 @@
+Hi {{ name }},
+
+{{ sender }} invited you to join Datalava timebank, a website where you can post
+and share skills with friends!
+
+To accept the invitation, please click the link below:
+{{ link }}
+
+-- Datalava timebank Team

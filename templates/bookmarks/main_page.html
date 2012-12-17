@@ -1,0 +1,42 @@
+{% extends "catalog.html" %}
+{% load avatar_tags %}
+{% block title %}Welcome to Datalava timebank{% endblock %}
+{% block head %}Welcome to Datalava{% endblock %}
+{% block external %}
+  <link rel="alternate" type="application/rss+xml"
+    title="Datalava timebank | Recent Posts"
+    href="/feeds/recent/" />
+
+	
+	
+	
+	
+	{% endblock %}
+
+{% block content %}
+<div id="nav">
+   
+    {% if user.is_authenticated %}
+        {% avatar user 65 %}
+      <a href="/user/{{ user.username }}/">
+        {{ user.username }}</a> |
+		<a href="/save/">Submit New Link</a> |
+       <a href="/friend/invite/">Invite Friend</a>|
+      
+       <a href="/popular/">popular</a> |
+	{% else %}
+     
+      
+    {% endif %}
+  </div>
+  {% if user.username %}
+    <p>Welcome {{ user.username }}!
+      Here you can store and share bookmarks!</p>
+  {% else %}
+    <p>Welcome anonymous user!
+      You need to <a href="/login/">login</a>
+      before you can use datalava time bank.</p>
+    {% endif %}
+  <h2>Bookmarks Shared by Users</h2>
+  {% include "bookmarks/shared_bookmark_list.html" %}
+{% endblock %}
