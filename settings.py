@@ -164,9 +164,9 @@ try:
 except ImportError:
     pass
 SITE_HOST = '127.0.0.1:8000'
-DEFAULT_FROM_EMAIL = 'Datalava Timebank<datalavatimebank@example.com>'
+DEFAULT_FROM_EMAIL = 'ccc@example.com>'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
-EMAIL_HOST_USER = 'dextrazdxt@gmail.com'
-EMAIL_HOST_PASSWORD = 'fremaxbabie'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
